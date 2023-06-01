@@ -1,0 +1,14 @@
+.container__app{
+  width: 100%;
+  height: 100vh;
+}
+
+.container__app-box{
+  /* border: 2px solid red; */
+  height: 100%;
+  max-height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
