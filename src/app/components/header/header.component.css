@@ -1,6 +1,6 @@
 .container{
   padding: 5px 0;
-
+  /* background-color: ; */
    /* background-color: rgb(18, 143, 227); */
   min-height: 10vh;
   border-bottom: 1px solid whitesmoke;
@@ -17,7 +17,7 @@
 .logo{
   color: white;
   font-size: 2.3rem;
-  text-shadow: 8px 5px 2px rgba(0,0,0,0.48);
+  text-shadow: 5px 3px 2px rgba(0,0,0,0.48);
   /* border: 2px solid white; */
 }
 
@@ -32,14 +32,14 @@
   border-radius: 10px;
   margin-bottom: 10px;
   border: 1px solid gainsboro;
-  background-color: rgba(240, 248, 255, 0.356);
+  background-color: #f1b8fc42;
 }
 
 .login-voluntario__title{
   color: white;
   padding: 0 5px;
   font-size: 1.3rem;
-  text-shadow: -1px 4px 2px rgba(0,0,0,0.77);
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.77);
 }
 
 .login-form{
@@ -55,5 +55,9 @@
   height: 30px;
   color: black;
   border-radius: 30px;
-  background-color: rgba(240, 255, 255, 0.648);
+  background-color: rgba(230, 230, 250, 0.37);
+  &:active{
+    position: relative;
+    top: 1px;
+  }
 }
