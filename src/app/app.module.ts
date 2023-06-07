@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { IndexComponent } from './pages/index/index.component';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BigCardIndexComponent } from './components/big-card-index/big-card-index.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     IndexComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    BigCardIndexComponent
   ],
   imports: [
     BrowserModule,

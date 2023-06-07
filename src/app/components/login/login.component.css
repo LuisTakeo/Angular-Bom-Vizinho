@@ -1,64 +1,32 @@
 .container{
-  width: 80vw;
-  /* border: 2px solid lightblue; */
-  border-radius: 5px;
-  min-height: 80vh;
-
-  background-color: rgba(245, 245, 253, 0.897);
-  -webkit-box-shadow: 16px 13px 0px -1px rgba(161,184,167,1);
-  -moz-box-shadow: 16px 13px 0px -1px rgba(161,184,167,1);
-  box-shadow: 16px 13px 0px -1px rgba(161,184,167,1);
-
-  display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid gainsboro; */
+    width: 100%;
+    height: 100%;
+    
 }
 
-.container__principal, .container__form{
-  width: 50%;
-  text-align: center;
+.login-title{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: start;
 }
 
-.container__principal{
-  
-  /* border: 1px solid royalblue; */
-  border-radius: 25px 0 0 25px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-.principal__title{
-  /* border: 2px solid white; */
-  width: 100%;
-  color: white;
-  font-size: 1.7rem;
-  text-shadow: 5px 3px 2px rgba(0,0,0,0.48);
+.login-idoso{
+    display: flex;
+    flex-direction: column;
 
 }
 
-.principal__img{
-  /* border: 2px solid white; */
-  width: 90%;
-  
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+.login-idoso > input,
+.login-idoso > button {
+    width: 95%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    margin: 5px auto 0
 }
 
-.principal__img__logo {
-  width: 100%;
-  max-width: 500px;
-  
-  /* border: 2px solid red; */
-}
-
-
-.container__form{
-  
-  border-radius: 0 25px 25px 0;
-  display: flex;
-  align-items: center;
-
-}
