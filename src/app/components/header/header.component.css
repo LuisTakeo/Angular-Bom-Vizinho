@@ -2,7 +2,7 @@
   padding: 5px 0;
   /* background-color: ; */
    /* background-color: rgb(18, 143, 227); */
-  min-height: 10vh;
+
   /* border-bottom: 1px solid whitesmoke; */
 }
 
@@ -10,59 +10,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  /* border: 2px solid red; */
   margin: 0 auto;
-  width: 90%;
+
+  min-height: 10vh;
+  width: 95%;
 }
 .logo{
-  color: black;
+  color: rgb(74, 50, 50);
+    /* text-shadow: 3px 3px 5px rgba(162, 86, 86, 0.845); */
   font-size: 2.3rem;
-  text-shadow: 5px 3px 2px rgba(210, 189, 189, 0.48);
+  text-shadow: 5px 3px 2px rgba(144, 119, 119, 0.48);
   /* border: 2px solid white; */
 }
 
 .login-voluntario{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
   width: 40vw;
   padding: 5px 10px;
-
   margin-bottom: 10px;
   /* background-color: #8fc09558; */
 }
 
-.login-voluntario__title{
-  color: #618f67;
-  padding: 0 5px;
-  font-size: 1.3rem;
-  text-shadow: 2px 3px 2px rgba(192, 178, 178, 0.77);
-}
-
-.login-form{
-  width: 40%;
-  padding: .5rem;
-  border-radius: 10px;
-  font-size: .95rem;
-  border: 1px solid gainsboro;
-  background-color: #f0f9f1b3;
-}
-
 .login-voluntario__button{
+
+  font-size: 1.2rem;
   text-align: center;
   line-height: 5px;
   text-decoration: none;
   width: 50%;
   height: 30px;
   color: black;
-  padding: 15px 5px;
-  
+  padding: 20px 10px;
 
+  border-bottom: 1px solid rgb(104, 145, 104);
 }
 
 .login-voluntario__button:hover{
-  border-bottom: 2px solid rgb(56, 43, 43);
+  border-bottom: 1px solid rgb(160, 202, 160);
+  background-color: rgba(203, 234, 203, 0.779);
 }
 
 .login-voluntario__button:active{

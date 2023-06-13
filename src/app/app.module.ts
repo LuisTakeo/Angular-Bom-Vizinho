@@ -9,6 +9,9 @@ import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BigCardIndexComponent } from './components/big-card-index/big-card-index.component';
 
+import { ButtonLoginComponent } from './components/button-login/button-login.component';
+import { HomeComponent } from './pages/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,9 @@ import { BigCardIndexComponent } from './components/big-card-index/big-card-inde
     IndexComponent,
     LoginComponent,
     FooterComponent,
-    BigCardIndexComponent
+    BigCardIndexComponent,
+    ButtonLoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
