@@ -11,6 +11,7 @@ import { BigCardIndexComponent } from './components/big-card-index/big-card-inde
 
 import { ButtonLoginComponent } from './components/button-login/button-login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     BigCardIndexComponent,
     ButtonLoginComponent,
-    HomeComponent
+    HomeComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
