@@ -6,14 +6,15 @@
   /* border: 2px solid gainsboro; */
   width: 100%;
   height: 100%;
-
+  margin-bottom: 20px;
+  /* TODO botar um scroll */
 }
 
 .login-title{
   color: rgb(74, 50, 50);
-  text-shadow: 5px 3px 2px rgba(144, 119, 119, 0.48);
+  /* text-shadow: 5px 3px 2px rgba(144, 119, 119, 0.48); */
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   text-align: start;
 }
 

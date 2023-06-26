@@ -9,11 +9,10 @@
 
 }
 
-.login-title{
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: start;
+.container-description{
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 200;
 }
 
 .container-botoes{
