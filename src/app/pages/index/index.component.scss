@@ -1,0 +1,177 @@
+
+
+.background2 {
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 92vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  /* border: 2px solid red; */
+  -webkit-box-shadow: 16px 13px 0px -1px #5BA373;
+  -moz-box-shadow: 16px 13px 0px -1px #5BA373;
+  box-shadow: 16px 13px 0px -1px #5BA373;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+
+
+/***************** Cabeçalho ****************/
+
+.container__header {
+  // background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 40px;
+}
+
+.header__title {
+  padding: 0;
+  display: inline;
+  justify-content: space-around;
+  font-size: 1.75rem;
+  h2>a>img {
+    width: 100%;
+    max-width: 40px;
+    /* position: relative;
+    top: 3px; */
+  }
+}
+
+
+.header__title>h2>a>span {
+  /* position: absolute; */
+  color: rgb(0, 0, 0);
+  /* texto bom vizinho */
+  text-decoration: none;
+}
+.header__title>h2>a{
+text-decoration: none;
+}
+
+
+.header__login>a {
+  color: rgb(0, 0, 0);
+  /* nav bar */
+  text-decoration: none;
+  /* tirar decoração do texto, retirar o grifado do texto */
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.275rem;
+}
+
+.header__login>a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(128, 228, 161);
+}
+
+.main{
+display: flex;
+/* border: 2px solid red; */
+// max-height: 85.5vh;
+width: 100%;
+height: 600px;
+/* max-height: 90vh ; */
+}
+
+.main__img{
+  /* position: relative; */
+//  border: 2px solid red;
+  /* flex: 1; */
+  width: 55%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+.main__img > img{
+/* display: flex; */
+/* position: absolute; */
+/* top: 120px; */
+/* width: 400px; */
+/* margin-right: 33px; */
+width: 90%;
+height: 90%;
+/* width: fit-content; */
+/* height:  */
+  // border: 2px solid red;
+}
+
+.main__login{
+/* flex: 1; */
+width: 45%;
+// height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 10px;
+//  border: 2px solid blue;
+}
+
+
+.casas {
+  height: 130px;
+  width: 160px;
+}
+
+.texto_eco {
+  color: rgb(0, 0, 0);
+  font-size: 1.65rem;
+  font-weight: bold;
+}
+
+.texto_pequeno {
+  font-size: 1.325rem;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+
+/***************** BOTAO ****************/
+.botao {
+  /* position: relative; */
+  background-color: #074b09;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  padding: .6rem;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.botao:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  /* position: absolute; */
+  /* padding-top: 300%;
+  padding-left: 350%; */
+  /* margin-left: -20px !important; */
+  /* margin-top: -120%; */
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.botao:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

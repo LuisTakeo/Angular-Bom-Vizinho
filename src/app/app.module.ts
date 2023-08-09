@@ -3,31 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { IndexComponent } from './pages/index/index.component';
-import { LoginComponent } from './components/login/login.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BigCardIndexComponent } from './components/big-card-index/big-card-index.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LoginVoluntarioComponent } from './pages/voluntario/login-voluntario/login-voluntario.component';
+import { HomeVoluntarioComponent } from './pages/voluntario/home-voluntario/home-voluntario.component';
+import { CadastrarVoluntarioComponent } from './pages/voluntario/login/cadastrar-voluntario/cadastrar-voluntario.component';
+import { CadastrarIdosoComponent } from './pages/idoso/login/cadastrar-idoso/cadastrar-idoso.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ButtonLoginComponent } from './components/button-login/button-login.component';
-import { HomeComponent } from './pages/home/home.component';
-import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     IndexComponent,
     LoginComponent,
-    FooterComponent,
-    BigCardIndexComponent,
-    ButtonLoginComponent,
-    HomeComponent,
-    CadastroComponent
+    LoginVoluntarioComponent,
+    HomeVoluntarioComponent,
+    CadastrarVoluntarioComponent,
+    CadastrarIdosoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

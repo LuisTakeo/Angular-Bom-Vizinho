@@ -1,34 +1,43 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './pages/index/index.component';
-import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ButtonLoginComponent } from './components/button-login/button-login.component';
-import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { LoginComponent } from './pages/login/login.component';
+import { HomeIdosoComponent } from './pages/idoso/home-idoso/home-idoso.component';
+import { LoginVoluntarioComponent } from './pages/voluntario/login-voluntario/login-voluntario.component';
+import { HomeVoluntarioComponent } from './pages/voluntario/home-voluntario/home-voluntario.component';
+import { CadastrarIdosoComponent } from './pages/idoso/login/cadastrar-idoso/cadastrar-idoso.component';
+import { CadastrarVoluntarioComponent } from './pages/voluntario/login/cadastrar-voluntario/cadastrar-voluntario.component';
 
 const routes: Routes = [
   {
     path: '',
     // pathMatch: 'full',
     component: IndexComponent,
-    title: 'Bom Vizinho',
-    children: [
-      {path: 'login', component: LoginComponent, pathMatch: 'prefix', title: "Bom Vizinho - Login"},
-      {path: 'cadastrar',component: CadastroComponent, pathMatch: 'prefix', title: "Bom Vizinho - Cadastrar"},
-      {path: '', component: ButtonLoginComponent}
-    ]
   },
   {
-    path: 'home',
-    component: HomeComponent,
-    title: 'Bom Vizinho - Pagina Inicial'
+    path: 'login/idoso',
+    component: LoginComponent,
   },
-
   {
-    path: '**',
-    redirectTo: ''
-  }
-
+    path: 'login/voluntario',
+    component: LoginVoluntarioComponent,
+  },
+  {
+    path: 'cadastrar/idoso',
+    component: CadastrarIdosoComponent,
+  },
+  {
+    path: 'cadastrar/voluntario',
+    component: CadastrarVoluntarioComponent,
+  },
+  {
+    path: 'idoso/home',
+    component: HomeIdosoComponent,
+  },
+  {
+    path: 'voluntario/home',
+    component: HomeVoluntarioComponent,
+  },
 ];
 
 @NgModule({
